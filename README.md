@@ -17,11 +17,11 @@ Running containers on OpenShift comes with certain security and other requiremen
 Gitea can be easily deployed using the included templates in `openshift` folder. If your have persistent volumes available in your cluster:
 
 ```
-oc new-app -f https://raw.githubusercontent.com/wkulhanek/docker-openshift-gitea/master/openshift/gitea-persistent-template.yaml --param=HOSTNAME=gitea-demo.yourdomain.com
+oc new-app -f https://raw.githubusercontent.com/rilindo/docker-openshift-gitea/master/openshift/gitea-ephemeral-template.yaml --param=HOSTNAME=gitea-demo.yourdomain.com
 ```
 Otherwise:
 ```
-oc new-app -f https://raw.githubusercontent.com/wkulhanek/docker-openshift-gitea/master/openshift/gitea-ephemeral-template.yaml --param=HOSTNAME=gitea-demo.yourdomain.com
+oc new-app -f https://raw.githubusercontent.com/rilindo/docker-openshift-gitea/master/openshift/gitea-ephemeral-template.yaml --param=HOSTNAME=gitea-demo.yourdomain.com
 ```
 
 Note that hostname is required during Gitea installation in order to configure repository URLs correctly.
