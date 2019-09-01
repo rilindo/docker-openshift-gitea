@@ -60,7 +60,7 @@ objects:
             value: ${DATABASE_SHARED_BUFFERS}
           - name: POSTGRESQL_ADMIN_PASSWORD
             value: ${DATABASE_ADMIN_PASSWORD}
-          image: 'docker.io/wkulhanek/gitea:1.7.5'
+          image: ' '
           livenessProbe:
             initialDelaySeconds: 30
             tcpSocket:
